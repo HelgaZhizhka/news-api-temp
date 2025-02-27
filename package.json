@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "homepage": "https://HelgaZhizhka.github.io/repository-name/news-api-temp",
+    "homepage": "https://HelgaZhizhka.github.io/news-api-temp/news",
     "scripts": {
         "start": "webpack serve --open",
         "build": "webpack --mode production",
