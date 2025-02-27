@@ -24,7 +24,9 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages       
+          folder: dist            
+          target-folder: news     
