@@ -10,17 +10,15 @@
         "dev": "webpack --mode development",
         "lint": "eslint src/**/*.ts",
         "format": "prettier --write src/**/*.{ts,css,html}",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d news -b gh-pages"
     },
     "repository": {
         "type": "git",
         "url": ""
     },
     "keywords": [],
-    "author": "Aleh Serhiyenia",
+    "author": "",
     "license": "ISC",
-    "homepage": "",
     "dependencies": {
         "dotenv": "^16.0.3"
     },
