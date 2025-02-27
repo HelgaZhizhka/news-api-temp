@@ -1,0 +1,6 @@
+node_modules
+dist
+news
+.env
+.env.development
+.env.production
