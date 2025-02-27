@@ -1,4 +1,5 @@
 # news-JS
+https://helgazhizhka.github.io/news-api-temp/news-api
 
 Run application:  
 - Copy and rename `.env.example` to `.env` and set variables with your data  
