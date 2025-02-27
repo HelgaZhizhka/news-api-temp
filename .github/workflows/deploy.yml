@@ -33,5 +33,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm install -g gh-pages
-          gh-pages -d dist -b gh-pages --dest news
+          npm run deploy
