@@ -3,14 +3,15 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "homepage": "https://yourusername.github.io/repository-name/news-api",
+    "homepage": "https://HelgaZhizhka.github.io/repository-name/news-api-temp",
     "scripts": {
         "start": "webpack serve --open",
         "build": "webpack --mode production",
         "dev": "webpack --mode development",
         "lint": "eslint src/**/*.ts",
         "format": "prettier --write src/**/*.{ts,css,html}",
-        "deploy": "gh-pages -d news -b gh-pages"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist -b gh-pages --dest news"
     },
     "repository": {
         "type": "git",
