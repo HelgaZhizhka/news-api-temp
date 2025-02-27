@@ -3,7 +3,6 @@ const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const DotenvWebpackPlugin = require('dotenv-webpack');
-const EslintPlugin = require('eslint-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = ({ mode }) => {
@@ -40,7 +39,6 @@ module.exports = ({ mode }) => {
                 filename: 'index.html',
             }),
             new CleanWebpackPlugin(),
-            new EslintPlugin({ extensions: 'ts' }),
 
             new webpack.DefinePlugin({
                 'process.env.API_URL': JSON.stringify(API_URL),
