@@ -1,0 +1,17 @@
+name: Clear Cache
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clear-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+
+      - name: Clear build artifacts
+        run: rm -rf node_modules dist .next .cache package-lock.json
