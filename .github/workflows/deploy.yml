@@ -33,4 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd news
-          gh-pages -d dist -b gh-pages --dest news
+          gh-pages -d dist -b gh-pages
